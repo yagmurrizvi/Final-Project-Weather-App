@@ -1,0 +1,157 @@
+body {
+  padding-top: 10px;
+}
+div#mainBody {
+  padding-top: 30px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(244, 186, 186) 0%,
+    rgb(194, 157, 231) 90%
+  );
+  border-radius: 120px;
+}
+
+#search-city,
+.btn.btn-outline-secondary.btn-light {
+  border-radius: 50px;
+  display: block;
+  margin: 0 auto;
+}
+#search {
+  position: absolute;
+  top: 45px;
+  right: 320px;
+  background-color: white;
+}
+
+#current-button {
+  border-radius: 50px;
+  position: absolute;
+  top: 45px;
+  right: 270px;
+  padding: 6px 10px;
+  font-size: 20px;
+  border: none;
+  transition: all 300ms ease;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(244, 186, 186) 0%,
+    rgb(194, 157, 231) 90%
+  );
+}
+
+#current-button:hover,
+#search:hover {
+  cursor: pointer;
+  background: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+}
+
+div#info1 {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 25px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(244, 186, 186) 0%,
+    rgb(194, 157, 231) 90%
+  );
+  border-radius: 100px;
+}
+div#info2 {
+  padding: 5px 5px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(244, 186, 186) 0%,
+    rgb(194, 157, 231) 90%
+  );
+  border-radius: 100px;
+}
+
+.col-sm-2 {
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+h1,
+h2,
+h5,
+h6,
+input.form-control,
+#current-button,
+small {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+p#time {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  padding: 5px;
+  font-size: 30px;
+}
+
+.card-title {
+  font-size: 15px;
+}
+.footer {
+  font-size: 14px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#info1:hover {
+  background: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+  /* color: #c8a0e2; */
+  border: 1px solid #c8a0e2;
+  transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  -moz-box-shadow: 5px 5px 5px #888;
+  -webkit-box-shadow: 5px 5px 5px #888;
+  box-shadow: 5px 5px 5px #888;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+#info2:hover {
+  background: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+  /* color: #c8a0e2; */
+  border: 1px solid #c8a0e2;
+  transform: scale(1.5, 1.5);
+  -moz-transform: scale(1.5, 1.5);
+  -ms-transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.5, 1.5);
+  -o-transform: scale(1.5, 1.5);
+  -moz-box-shadow: 5px 5px 5px #888;
+  -webkit-box-shadow: 5px 5px 5px #888;
+  box-shadow: 5px 5px 5px #888;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+em {
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 100px;
+  border: none;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(244, 186, 186) 0%,
+    rgb(194, 157, 231) 90%
+  );
+}
