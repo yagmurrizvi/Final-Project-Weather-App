@@ -209,29 +209,12 @@ searchCity("Hamburg");
 let searchCityName = document.querySelector("#search-form");
 searchCityName.addEventListener("submit", city);
 
-//Get temperature of current location
-function getTemperature(response) {
-  //max temp
-  let temperature = Math.round(response.data.main.temp);
-  let maxTemperature = document.querySelector("#temperature");
-  maxTemperature.innerHTML = temperature;
-
-  //Description
-  let description = response.data.weather[0].main;
-  let mainDesc = document.querySelector("#first-day-description");
-  mainDesc.innerHTML = description;
-  //city name
-  let currentLocation = response.data.name;
-  let cityName = document.querySelector("#name");
-  cityName.innerHTML = currentLocation;
-}
-
 function getPosition(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
   let apiKey = "525c9c9ac5b08ed476653a02fbaab704";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(getTemperature);
+  axios.get(apiUrl).then(showTemperature);
 }
 
 function position(event) {
